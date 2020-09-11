@@ -7,14 +7,17 @@ class ImgurClient {
 	constructor(loginParams) {
 		this.clientId = loginParams.clientId;
 		this.accessToken = loginParams.accessToken;
-		this.isLogged = !loginParams.accessToken == undefined;
+		this.isLogged = loginParams.accessToken != undefined;
 	}
 }
 // Account functions
-ImgurClient.prototype.getAccountInformations = Account.AccountBase;
 ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
+ImgurClient.prototype.getAccountAvatar = Account.AccountAvatar;
+ImgurClient.prototype.getAccountInformations = Account.AccountBase;
 ImgurClient.prototype.getAccountImages = Account.AccountImages;
 ImgurClient.prototype.getAccountFavorites = Account.AccountFavorites;
+ImgurClient.prototype.getAccountReplies = Account.AccountReplies;
+ImgurClient.prototype.getAccountSettings = Account.AccountSettings;
 
 // Album functions
 ImgurClient.prototype.getAlbumInformations = Album.AlbumBase;
@@ -26,5 +29,9 @@ ImgurClient.prototype.getCommentReplies = Comment.Replies;
 
 // Image Function
 ImgurClient.prototype.getImageInformations = Image.ImageBase;
+ImgurClient.prototype.changeStatusFavoriteImage = Image.FavoriteAnImage;
+ImgurClient.prototype.upload = Image.ImageUpload;
+ImgurClient.prototype.updateImageInformation = Image.UpdateImageInformation;
+ImgurClient.prototype.remove = Image.ImageDeletion;
 
 module.exports = ImgurClient;
