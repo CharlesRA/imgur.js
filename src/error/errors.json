@@ -1,0 +1,5 @@
+{
+	"disconnected": {
+		"noAccessToken": "Error: To use this method you must provide an accessToken during initialization of Imgur Client"
+	}
+}
