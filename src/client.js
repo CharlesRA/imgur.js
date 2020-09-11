@@ -6,7 +6,7 @@ class ImgurClient {
 	}
 }
 // Account functions
-ImgurClient.prototype.AccountBase = Account.AccountBase;
+ImgurClient.prototype.getAccountInformations = Account.AccountBase;
 
 //
 module.exports = ImgurClient;
