@@ -1,7 +1,10 @@
 require("dotenv").config();
 const ImgurClient = require("../index");
 const unauthClient = new ImgurClient({clientId: process.env.CLIENT_ID});
-const authClient = new ImgurClient({clientId: process.env.CLIENT_ID, accessToken: process.env.ACCESS_TOKEN});
+const authClient = new ImgurClient({
+	clientId: process.env.CLIENT_ID,
+	accessToken: process.env.ACCESS_TOKEN,
+});
 const expect = require("chai").expect;
 
 describe("Account", function () {

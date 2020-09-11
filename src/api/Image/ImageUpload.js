@@ -25,7 +25,8 @@ module.exports = async function (parameters, anonymous = false) {
 	}
 	const formData = {
 		title: parameters.title == undefined ? "" : parameters.title,
-		description: parameters.description == undefined ? "" : parameters.description,
+		description:
+			parameters.description == undefined ? "" : parameters.description,
 	};
 	if (parameters.image) {
 		formData.image = parameters.image;
@@ -37,7 +38,10 @@ module.exports = async function (parameters, anonymous = false) {
 		method: "POST",
 		uri: `https://api.imgur.com/3/image`,
 		headers: {
-			Authorization: anonymous === true ? `Client-ID ${this.clientId}` : `Bearer ${this.accessToken}`,
+			Authorization:
+				anonymous === true
+					? `Client-ID ${this.clientId}`
+					: `Bearer ${this.accessToken}`,
 		},
 		formData: formData,
 		json: true,
