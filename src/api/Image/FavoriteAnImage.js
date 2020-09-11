@@ -1,0 +1,28 @@
+"use scrict";
+const rp = require("request-promise");
+const errors = require("../../error/errors.json");
+
+module.exports = async function (imageHash) {
+	if (!this.isLogged) {
+		if (!this.accessToken) {
+			console.log(errors.disconnected.noAccessToken);
+		}
+		return undefined;
+	}
+	const options = {
+		method: "POST",
+		uri: `https://api.imgur.com/3/image/${imageHash}/favorite`,
+		headers: {
+			Authorization: `Bearer ${this.accessToken}`,
+		},
+		json: true,
+	};
+
+	return rp(options)
+		.then(function (response) {
+			return response.data;
+		})
+		.catch(function (err) {
+			return err;
+		});
+};
