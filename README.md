@@ -20,17 +20,22 @@ const client = new ImgurClient({clientId: "myClientId"});
 
 ## API
 
-| Method                                              | Category |
-| --------------------------------------------------- | -------- |
-| [getAlbumInformations()](#getAlbumInformations)     | Album    |
-| [getAlbumImages()](#getAlbumImages)                 | Album    |
-| [getAccountInformations()](#getAccountInformations) | Account  |
-| [isAccountBlocked()](#isAccountBlocked)             | Account  |
-| [getAccountFavorites()](#getAccountFavorites)       | Account  |
-| [getAccountImages()](#getAccountImages)             | Account  |
-| [getImageInformations()](#getImageInformations)     | Image    |
-| [getCommentInformations()](#getCommentInformations) | Comment  |
-| [getCommentReplies()](#getCommentReplies)           | Comment  |
+| Method                                                    | Category |
+| --------------------------------------------------------- | -------- |
+| [getAlbumInformations()](#getAlbumInformations)           | Album    |
+| [getAlbumImages()](#getAlbumImages)                       | Album    |
+| [getAccountInformations()](#getAccountInformations)       | Account  |
+| [isAccountBlocked()](#isAccountBlocked)                   | Account  |
+| [getAccountFavorites()](#getAccountFavorites)             | Account  |
+| [getAccountImages()](#getAccountImages)                   | Account  |
+| [getAccountSettings()](#getAccountSettings)               | Account  |
+| [changeStatusFavoriteImage()](#changeStatusFavoriteImage) | Image    |
+| [getImageInformations()](#getImageInformations)           | Image    |
+| [upload()](#upload)                                       | Image    |
+| [remove()](#remove)                                       | Image    |
+| [updateImageInformation()](#updateImageInformation)       | Image    |
+| [getCommentInformations()](#getCommentInformations)       | Comment  |
+| [getCommentReplies()](#getCommentReplies)                 | Comment  |
 
 ---
 
@@ -56,12 +61,40 @@ client.getAlbumImages("U2IKcAG").then(console.log);
 client.isAccountBlocked("charlesra").then(console.log);
 ```
 
+### getAccountAvatar
+
+```js
+client.getAccountAvatar("charlesra").then(console.log);
+```
+
 ### getAccountFavorites
+
+```js
+client.getAccountFavorites("charlesra").then(console.log);
+```
 
 ### getAccountInformations
 
 ```js
 client.getAccountInformations("charlesra").then(console.log);
+```
+
+### getAccountImages
+
+```js
+client.getAccountImages("charlesra").then(console.log);
+```
+
+### getAccountReplies
+
+```js
+client.getAccountReplies("charlesra").then(console.log);
+```
+
+### getAccountSettings
+
+```js
+client.getAccountSettings().then(console.log);
 ```
 
 ## Comment
@@ -82,10 +115,34 @@ client.getCommentReplies("350694303").then(console.log);
 
 ## Image
 
+## changeStatusFavoriteImage
+
+```js
+client.changeStatusFavoriteImage("jXQHyU4").then(console.log);
+```
+
 ### getImageInformations
 
 ```js
 client.getImageInformations("jXQHyU4").then(console.log);
+```
+
+### upload
+
+```js
+client.upload({image: "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"}, true).then(console.log);
+```
+
+### remove
+
+```js
+client.remove("imageId").then(console.log);
+```
+
+### updateImageInformation
+
+```js
+client.updateImageInformation("imageId", {title: "Title change", description: "Description change"})).then(console.log);
 ```
 
 ## Contributing
