@@ -1,5 +1,9 @@
 {
 	"disconnected": {
 		"noAccessToken": "Error: To use this method you must provide an accessToken during initialization of Imgur Client"
+	},
+	"upload": {
+		"empty": "Upload error, empty image or video parameter",
+		"bothFormat": "Upload error, can't send video and image at the sametime"
 	}
 }
