@@ -1,15 +1,19 @@
 {
 	"name": "imgur.js",
-	"version": "0.3.0",
-	"description": "",
+	"version": "0.4.0",
+	"description": "A powerful library for interacting with the Imgur API",
 	"main": "index.js",
 	"scripts": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/CharlesRA/imgur.js.git"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"imgur",
+		"api",
+		"client"
+	],
+	"author": "CharlesRA",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/CharlesRA/imgur.js/issues"
