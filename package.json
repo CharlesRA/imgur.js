@@ -1,6 +1,6 @@
 {
 	"name": "imgur-api.js",
-	"version": "0.9.1",
+	"version": "1.0.0",
 	"description": "An unofficial powerful library for interacting with the Imgur API",
 	"main": "index.js",
 	"scripts": {
