@@ -7,6 +7,7 @@ class ImgurClient {
 }
 // Account functions
 ImgurClient.prototype.getAccountInformations = Account.AccountBase;
+ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
 
 //
 module.exports = ImgurClient;

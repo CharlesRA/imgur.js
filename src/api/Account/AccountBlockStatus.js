@@ -3,7 +3,7 @@ const rp = require("request-promise");
 
 module.exports = async function (username) {
 	const options = {
-		uri: `https://api.imgur.com/3/account/${username}`,
+		uri: `https://api.imgur.com/account/v1/${username}/block`,
 		headers: {
 			Authorization: `Client-ID ${this.clientId}`,
 		},
@@ -12,7 +12,7 @@ module.exports = async function (username) {
 
 	return rp(options)
 		.then(function (response) {
-			return response.data;
+			return response.data.blocked;
 		})
 		.catch(function (err) {
 			return err;
