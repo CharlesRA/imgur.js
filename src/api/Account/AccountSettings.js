@@ -11,7 +11,7 @@ module.exports = async function (username) {
 	}
 	const options = {
 		method: "GET",
-		uri: `https://api.imgur.com/3/account/${username}/images`,
+		uri: `https://api.imgur.com/3/account/me/settings`,
 		headers: {
 			Authorization: `Bearer ${this.accessToken}`,
 		},
