@@ -1,0 +1,27 @@
+{
+	"name": "imgur.js",
+	"version": "0.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node test/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CharlesRA/imgur.js.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/CharlesRA/imgur.js/issues"
+	},
+	"homepage": "https://github.com/CharlesRA/imgur.js#readme",
+	"dependencies": {
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6"
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0"
+	}
+}
