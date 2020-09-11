@@ -3,6 +3,7 @@ const rp = require("request-promise");
 
 module.exports = async function (username) {
 	const options = {
+		method: "GET",
 		uri: `https://api.imgur.com/account/v1/${username}/block`,
 		headers: {
 			Authorization: `Client-ID ${this.clientId}`,

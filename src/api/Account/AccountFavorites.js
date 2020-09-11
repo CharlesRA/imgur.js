@@ -3,6 +3,7 @@ const rp = require("request-promise");
 
 module.exports = async function (username, page, favoritesSort = "newest") {
 	const options = {
+		method: "GET",
 		uri: `https://api.imgur.com/3/account/${username}/favorites`,
 		headers: {
 			Authorization: `Client-ID ${this.clientId}`,

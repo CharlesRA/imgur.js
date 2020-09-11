@@ -10,6 +10,7 @@ module.exports = async function (username) {
 		return undefined;
 	}
 	const options = {
+		method: "GET",
 		uri: `https://api.imgur.com/3/account/${username}/images`,
 		headers: {
 			Authorization: `Client-ID ${this.clientId}`,
@@ -19,7 +20,7 @@ module.exports = async function (username) {
 
 	return rp(options)
 		.then(function (response) {
-			return response.data.blocked;
+			return response.data;
 		})
 		.catch(function (err) {
 			return err;
