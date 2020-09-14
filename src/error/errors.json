@@ -5,5 +5,8 @@
 	"upload": {
 		"empty": "Upload error, empty image or video parameter",
 		"bothFormat": "Upload error, can't send video and image at the sametime"
+	},
+	"vote": {
+		"unknown": "Vote error, unknown vote parameter"
 	}
 }
