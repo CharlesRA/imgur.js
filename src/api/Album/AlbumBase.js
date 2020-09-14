@@ -16,6 +16,6 @@ module.exports = async function (albumHash) {
 			return response.data;
 		})
 		.catch(function (err) {
-			return err;
+			return "Error during request";
 		});
 };
