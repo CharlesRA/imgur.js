@@ -36,6 +36,9 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [updateImageInformation()](#updateImageInformation)       | Image    |
 | [getCommentInformations()](#getCommentInformations)       | Comment  |
 | [getCommentReplies()](#getCommentReplies)                 | Comment  |
+| [voteComment()](#voteComment)                             | Comment  |
+| [sendComment()](#sendComment)                             | Comment  |
+| [deleteComment()](#deleteComment)                         | Comment  |
 
 ---
 
@@ -111,6 +114,24 @@ client.getCommentInformations("350694303").then(console.log);
 client.getCommentReplies("350694303").then(console.log);
 ```
 
+### voteComment
+
+```js
+client.voteComment("myCommentId", "up").then(console.log);
+```
+
+### sendComment
+
+```js
+client.sendComment("myCommentId", "My super comment").then(console.log);
+```
+
+### deleteComment
+
+```js
+client.deleteComment("myCommentId").then(console.log);
+```
+
 ## Gallery
 
 ## Image
@@ -130,7 +151,15 @@ client.getImageInformations("jXQHyU4").then(console.log);
 ### upload
 
 ```js
-client.upload({image: "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"}, true).then(console.log);
+client
+	.upload(
+		{
+			image:
+				"https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg",
+		},
+		true,
+	)
+	.then(console.log);
 ```
 
 ### remove
