@@ -16,6 +16,6 @@ module.exports = async function (username, page, favoritesSort = "newest") {
 			return response.data;
 		})
 		.catch(function (err) {
-			return err;
+			return "Error during request";
 		});
 };
