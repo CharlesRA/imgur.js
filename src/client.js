@@ -26,6 +26,9 @@ ImgurClient.prototype.getAlbumImages = Album.AlbumImages;
 // Comment functions
 ImgurClient.prototype.getCommentInformations = Comment.CommentBase;
 ImgurClient.prototype.getCommentReplies = Comment.Replies;
+ImgurClient.prototype.voteComment = Comment.Vote;
+ImgurClient.prototype.sendComment = Comment.CommentCreation;
+ImgurClient.prototype.deleteComment = Comment.CommentDeletion;
 
 // Image Function
 ImgurClient.prototype.getImageInformations = Image.ImageBase;
