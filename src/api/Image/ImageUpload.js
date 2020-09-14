@@ -51,6 +51,6 @@ module.exports = async function (parameters, anonymous = false) {
 			return response.data;
 		})
 		.catch(function (err) {
-			return err;
+			return "Error during request";
 		});
 };

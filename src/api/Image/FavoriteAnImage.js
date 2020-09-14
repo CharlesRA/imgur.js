@@ -23,6 +23,6 @@ module.exports = async function (imageHash) {
 			return response.data;
 		})
 		.catch(function (err) {
-			return err;
+			return "Error during request";
 		});
 };

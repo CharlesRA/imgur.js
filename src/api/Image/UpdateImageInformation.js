@@ -24,6 +24,6 @@ module.exports = async function (imageHash, parameters) {
 			return response.data;
 		})
 		.catch(function (err) {
-			return err;
+			return "Error during request";
 		});
 };
