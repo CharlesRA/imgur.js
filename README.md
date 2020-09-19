@@ -24,11 +24,13 @@ const client = new ImgurClient({clientId: "myClientId"});
 | --------------------------------------------------------- | -------- |
 | [getAlbumInformations()](#getAlbumInformations)           | Album    |
 | [getAlbumImages()](#getAlbumImages)                       | Album    |
+| [getAccountAvatar()](#getAccountAvatar)                   | Account  |
 | [getAccountInformations()](#getAccountInformations)       | Account  |
-| [isAccountBlocked()](#isAccountBlocked)                   | Account  |
 | [getAccountFavorites()](#getAccountFavorites)             | Account  |
 | [getAccountImages()](#getAccountImages)                   | Account  |
+| [getAccountReplies()](#getAccountReplies)                 | Account  |
 | [getAccountSettings()](#getAccountSettings)               | Account  |
+| [isAccountBlocked()](#isAccountBlocked)                   | Account  |
 | [changeStatusFavoriteImage()](#changeStatusFavoriteImage) | Image    |
 | [getImageInformations()](#getImageInformations)           | Image    |
 | [upload()](#upload)                                       | Image    |
@@ -61,37 +63,37 @@ client.getAlbumImages("U2IKcAG").then(console.log);
 ### isAccountBlocked
 
 ```js
-client.isAccountBlocked("charlesra").then(console.log);
+client.isAccountBlocked("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountAvatar
 
 ```js
-client.getAccountAvatar("charlesra").then(console.log);
+client.getAccountAvatar("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountFavorites
 
 ```js
-client.getAccountFavorites("charlesra").then(console.log);
+client.getAccountFavorites("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountInformations
 
 ```js
-client.getAccountInformations("charlesra").then(console.log);
+client.getAccountInformations("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountImages
 
 ```js
-client.getAccountImages("charlesra").then(console.log);
+client.getAccountImages("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountReplies
 
 ```js
-client.getAccountReplies("charlesra").then(console.log);
+client.getAccountReplies("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountSettings

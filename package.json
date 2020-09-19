@@ -1,6 +1,6 @@
 {
 	"name": "imgur-api.js",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "An unofficial powerful library for interacting with the Imgur API",
 	"main": "index.js",
 	"scripts": {
@@ -10,8 +10,7 @@
 		"test:comment": "mocha ./test/Comment.test.js",
 		"test:gallery": "mocha ./test/Gallery.test.js",
 		"test:image": "mocha ./test/Image.test.js",
-		"format": "prettier --write '**/*.js*'",
-		"build": "rollup index.js --file imgur.js --format umd --name 'Imgur'"
+		"format": "prettier --write '**/*.js*'"
 	},
 	"repository": {
 		"type": "git",
@@ -37,8 +36,7 @@
 		"dotenv": "^8.2.0",
 		"jsdoc": "^3.6.5",
 		"mocha": "^8.1.3",
-		"prettier": "^2.1.1",
-		"rollup": "^2.26.11"
+		"prettier": "^2.1.1"
 	},
 	"prettier": {
 		"arrowParens": "always",
