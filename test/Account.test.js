@@ -10,23 +10,27 @@ const expect = require("chai").expect;
 describe("Account", function () {
 	this.timeout(10000);
 	it("isAccountBlocked", async function () {
-		const result = await unauthClient.isAccountBlocked("charlesra");
+		const result = await unauthClient.isAccountBlocked("charlesRaimbault");
 		expect(result).to.be.equal(false);
 	});
 	it("getAccountAvatar", async function () {
-		const result = await authClient.getAccountAvatar("charlesra");
+		const result = await authClient.getAccountAvatar("charlesRaimbault");
 		expect(typeof result.avatar).to.be.equal("string");
 	});
 	it("getAccountFavorites", async function () {
-		const result = await unauthClient.getAccountFavorites("charlesra");
+		const result = await unauthClient.getAccountFavorites(
+			"charlesRaimbault",
+		);
 		expect(result.length > 0).to.be.equal(true);
 	});
 	it("getAccountInformations", async function () {
-		const result = await unauthClient.getAccountInformations("charlesra");
-		expect(result.id).to.be.equal(114360911);
+		const result = await unauthClient.getAccountInformations(
+			"charlesRaimbault",
+		);
+		expect(result.id).to.be.equal(138316051);
 	});
 	it("getAccountImages", async function () {
-		const result = await authClient.getAccountImages("charlesra");
+		const result = await authClient.getAccountImages("charlesRaimbault");
 		expect(result.length > 0).to.be.equal(true);
 	});
 	it("getAccountReplies", async function () {
@@ -35,6 +39,6 @@ describe("Account", function () {
 	});
 	it("getAccountSettings", async function () {
 		const result = await authClient.getAccountSettings();
-		expect(result.account_url).to.be.equal("CharlesRA");
+		expect(result.account_url).to.be.equal("CharlesRaimbault");
 	});
 });

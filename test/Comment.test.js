@@ -39,11 +39,11 @@ describe("Comment", function () {
 		expect(result).to.be.equal(undefined);
 	});
 	it("sendComment", async function () {
-		const result = await authClient2.sendComment("qEA3ilr", "Unit test");
+		const result = await authClient2.sendComment("GYRs587", "Unit test");
 		id = result.id;
 		expect(result.id == undefined).to.be.equal(false);
 	});
-	it("sendComment", async function () {
+	it("deleteComment", async function () {
 		const result = await authClient2.deleteComment(id);
 		expect(result).to.be.equal(true);
 	});
