@@ -1,1 +1,4 @@
 test
+.env
+.prettierignore
+test.js
