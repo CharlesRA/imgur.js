@@ -25,14 +25,15 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [changeAlbumFavoriteStatus()](#changeAlbumFavoriteStatus) | Album    |
 | [getAlbumInformations()](#getAlbumInformations)           | Album    |
 | [getAlbumImages()](#getAlbumImages)                       | Album    |
+| [followTag()](#followTag)                                 | Account  |
 | [getAccountAvatar()](#getAccountAvatar)                   | Account  |
 | [getAccountInformations()](#getAccountInformations)       | Account  |
 | [getAccountFavorites()](#getAccountFavorites)             | Account  |
 | [getAccountImages()](#getAccountImages)                   | Account  |
 | [getAccountReplies()](#getAccountReplies)                 | Account  |
 | [getAccountSettings()](#getAccountSettings)               | Account  |
-| [isAccountBlocked()](#isAccountBlocked)                   | Account  |
 | [getAccountsBlocked()](#getAccountsBlocked)               | Account  |
+| [isAccountBlocked()](#isAccountBlocked)                   | Account  |
 | [changeStatusFavoriteImage()](#changeStatusFavoriteImage) | Image    |
 | [getImageInformations()](#getImageInformations)           | Image    |
 | [upload()](#upload)                                       | Image    |
@@ -49,6 +50,10 @@ const client = new ImgurClient({clientId: "myClientId"});
 ## Album
 
 ### changeAlbumFavoriteStatus
+
+```js
+client.followTag("doggo").then(console.log);
+```
 
 ```js
 client.changeAlbumFavoriteStatus("naOyG").then(console.log);

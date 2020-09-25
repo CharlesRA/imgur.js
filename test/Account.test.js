@@ -45,4 +45,8 @@ describe("Account", function () {
 		const result = await authClient.getAccountsBlocked();
 		expect(result.items == undefined).to.be.equal(false);
 	});
+	it("followTag", async function () {
+		const result = await authClient.followTag("fun");
+		expect(result.status).to.be.equal(true);
+	});
 });

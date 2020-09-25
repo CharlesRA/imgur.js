@@ -11,7 +11,8 @@ class ImgurClient {
 	}
 }
 // Account functions
-ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
+// ImgurClient.prototype.blockAccount = Account.AccountBlockCreate;
+ImgurClient.prototype.followTag = Account.FollowTag;
 ImgurClient.prototype.getAccountAvatar = Account.AccountAvatar;
 ImgurClient.prototype.getAccountInformations = Account.AccountBase;
 ImgurClient.prototype.getAccountImages = Account.AccountImages;
@@ -19,6 +20,7 @@ ImgurClient.prototype.getAccountFavorites = Account.AccountFavorites;
 ImgurClient.prototype.getAccountReplies = Account.AccountReplies;
 ImgurClient.prototype.getAccountSettings = Account.AccountSettings;
 ImgurClient.prototype.getAccountsBlocked = Account.AccountBlocks;
+ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
 
 // Album functions
 ImgurClient.prototype.getAlbumInformations = Album.AlbumBase;
