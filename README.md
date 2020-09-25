@@ -175,6 +175,30 @@ client.deleteComment("myCommentId").then(console.log);
 
 ## Gallery
 
+### getGalleryImages
+
+```js
+client.getDefaultTags().then(console.log);
+```
+
+### getGalleryImages
+
+```js
+client.getGalleryImages("h4uIJt8").then(console.log);
+```
+
+### getGalleryTags
+
+```js
+client.getGalleryTags("h4uIJt8").then(console.log);
+```
+
+### getTagInfo
+
+```js
+client.getTagInfo("fun").then(console.log);
+```
+
 ## Image
 
 ## changeStatusFavoriteImage
@@ -213,32 +237,6 @@ client.remove("imageId").then(console.log);
 
 ```js
 client.updateImageInformation("imageId", {title: "Title change", description: "Description change"})).then(console.log);
-```
-
-## Gallery
-
-### getGalleryImages
-
-```js
-client.getDefaultTags().then(console.log);
-```
-
-### getGalleryImages
-
-```js
-client.getGalleryImages("h4uIJt8").then(console.log);
-```
-
-### getGalleryTags
-
-```js
-client.getGalleryTags("h4uIJt8").then(console.log);
-```
-
-### getTagInfo
-
-```js
-client.getTagInfo("fun").then(console.log);
 ```
 
 ## Contributing
