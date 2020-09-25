@@ -6,6 +6,10 @@ const unauthClient = new ImgurClient({clientId: process.env.CLIENT_ID});
 
 describe("Gallery", function () {
 	this.timeout(10000);
+	it("getDefaultTags", async function () {
+		const result = await unauthClient.getDefaultTags();
+		expect(result.tags.length > 100).to.be.equal(true);
+	});
 	it("getGalleryImages", async function () {
 		const result = await unauthClient.getGalleryImages("h4uIJt8");
 		expect(result.datetime).to.be.equal(1600957033);

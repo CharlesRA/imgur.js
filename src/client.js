@@ -38,6 +38,7 @@ ImgurClient.prototype.sendComment = Comment.CommentCreation;
 ImgurClient.prototype.deleteComment = Comment.CommentDeletion;
 
 // Gallery functions
+ImgurClient.prototype.getDefaultTags = Gallery.GalleryTags;
 ImgurClient.prototype.getGalleryImages = Gallery.GalleryImage;
 ImgurClient.prototype.getGalleryTags = Gallery.GalleryItemTags;
 ImgurClient.prototype.getTagInfo = Gallery.GalleryTagInfo;
