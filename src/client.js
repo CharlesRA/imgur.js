@@ -18,10 +18,12 @@ ImgurClient.prototype.getAccountImages = Account.AccountImages;
 ImgurClient.prototype.getAccountFavorites = Account.AccountFavorites;
 ImgurClient.prototype.getAccountReplies = Account.AccountReplies;
 ImgurClient.prototype.getAccountSettings = Account.AccountSettings;
+ImgurClient.prototype.getAccountsBlocked = Account.AccountBlocks;
 
 // Album functions
 ImgurClient.prototype.getAlbumInformations = Album.AlbumBase;
 ImgurClient.prototype.getAlbumImages = Album.AlbumImages;
+ImgurClient.prototype.changeAlbumFavoriteStatus = Album.FavoriteAlbum;
 
 // Comment functions
 ImgurClient.prototype.getCommentInformations = Comment.CommentBase;

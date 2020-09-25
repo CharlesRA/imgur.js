@@ -41,4 +41,8 @@ describe("Account", function () {
 		const result = await authClient.getAccountSettings();
 		expect(result.account_url).to.be.equal("CharlesRaimbault");
 	});
+	it("getAccountsBlocked", async function () {
+		const result = await authClient.getAccountsBlocked();
+		expect(result.items == undefined).to.be.equal(false);
+	});
 });

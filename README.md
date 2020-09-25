@@ -22,6 +22,7 @@ const client = new ImgurClient({clientId: "myClientId"});
 
 | Method                                                    | Category |
 | --------------------------------------------------------- | -------- |
+| [changeAlbumFavoriteStatus()](#changeAlbumFavoriteStatus) | Album    |
 | [getAlbumInformations()](#getAlbumInformations)           | Album    |
 | [getAlbumImages()](#getAlbumImages)                       | Album    |
 | [getAccountAvatar()](#getAccountAvatar)                   | Account  |
@@ -31,6 +32,7 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [getAccountReplies()](#getAccountReplies)                 | Account  |
 | [getAccountSettings()](#getAccountSettings)               | Account  |
 | [isAccountBlocked()](#isAccountBlocked)                   | Account  |
+| [getAccountsBlocked()](#getAccountsBlocked)               | Account  |
 | [changeStatusFavoriteImage()](#changeStatusFavoriteImage) | Image    |
 | [getImageInformations()](#getImageInformations)           | Image    |
 | [upload()](#upload)                                       | Image    |
@@ -45,6 +47,12 @@ const client = new ImgurClient({clientId: "myClientId"});
 ---
 
 ## Album
+
+### changeAlbumFavoriteStatus
+
+```js
+client.changeAlbumFavoriteStatus("naOyG").then(console.log);
+```
 
 ### getAlbumInformations
 
@@ -94,6 +102,12 @@ client.getAccountImages("CharlesRaimbault").then(console.log);
 
 ```js
 client.getAccountReplies("CharlesRaimbault").then(console.log);
+```
+
+### getAccountsBlocked
+
+```js
+client.getAccountsBlocked().then(console.log);
 ```
 
 ### getAccountSettings
