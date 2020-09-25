@@ -1,6 +1,7 @@
 const Account = require("./api/Account/Account");
 const Album = require("./api/Album/Album");
 const Comment = require("./api/Comment/Comment");
+const Gallery = require("./api/Gallery/Gallery");
 const Image = require("./api/Image/Image");
 
 class ImgurClient {
@@ -35,6 +36,10 @@ ImgurClient.prototype.getCommentReplies = Comment.Replies;
 ImgurClient.prototype.voteComment = Comment.Vote;
 ImgurClient.prototype.sendComment = Comment.CommentCreation;
 ImgurClient.prototype.deleteComment = Comment.CommentDeletion;
+
+// Gallery functions
+
+ImgurClient.prototype.getTagInfo = Gallery.GalleryTagInfo;
 
 // Image Function
 ImgurClient.prototype.getImageInformations = Image.ImageBase;

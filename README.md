@@ -46,6 +46,7 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [voteComment()](#voteComment)                             | Comment  |
 | [sendComment()](#sendComment)                             | Comment  |
 | [deleteComment()](#deleteComment)                         | Comment  |
+| [getTagInfo()](#getTagInfo)                               | Gallery  |
 
 ---
 
@@ -209,6 +210,14 @@ client.remove("imageId").then(console.log);
 
 ```js
 client.updateImageInformation("imageId", {title: "Title change", description: "Description change"})).then(console.log);
+```
+
+## Gallery
+
+### getTagInfo
+
+```js
+client.getTagInfo("fun").then(console.log);
 ```
 
 ## Contributing
