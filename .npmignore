@@ -2,3 +2,4 @@ test
 .env
 .prettierignore
 test.js
+**/.nyc_output
