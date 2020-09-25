@@ -31,6 +31,7 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [getAccountFavorites()](#getAccountFavorites)             | Account  |
 | [getAccountImages()](#getAccountImages)                   | Account  |
 | [getAccountReplies()](#getAccountReplies)                 | Account  |
+| [getAccountCommentCount()](#getAccountCommentCount)       | Account  |
 | [getAccountSettings()](#getAccountSettings)               | Account  |
 | [getAccountsBlocked()](#getAccountsBlocked)               | Account  |
 | [isAccountBlocked()](#isAccountBlocked)                   | Account  |
@@ -116,6 +117,12 @@ client.getAccountReplies("CharlesRaimbault").then(console.log);
 
 ```js
 client.getAccountsBlocked().then(console.log);
+```
+
+### getAccountCommentCount
+
+```js
+client.getAccountCommentCount("CharlesRaimbault").then(console.log);
 ```
 
 ### getAccountSettings

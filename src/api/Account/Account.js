@@ -7,6 +7,7 @@ const AccountFavorites = require("./AccountFavorites");
 const AccountImages = require("./AccountImages");
 const AccountReplies = require("./AccountReplies");
 const AccountSettings = require("./AccountSettings");
+const CommentCount = require("./CommentCount");
 const FollowTag = require("./FollowTag");
 const UnfollowTag = require("./UnfollowTag");
 
@@ -20,6 +21,7 @@ module.exports = {
 	AccountImages,
 	AccountReplies,
 	AccountSettings,
+	CommentCount,
 	FollowTag,
 	UnfollowTag,
 };

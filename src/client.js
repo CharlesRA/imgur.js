@@ -20,6 +20,7 @@ ImgurClient.prototype.getAccountFavorites = Account.AccountFavorites;
 ImgurClient.prototype.getAccountReplies = Account.AccountReplies;
 ImgurClient.prototype.getAccountSettings = Account.AccountSettings;
 ImgurClient.prototype.getAccountsBlocked = Account.AccountBlocks;
+ImgurClient.prototype.getAccountCommentCount = Account.CommentCount;
 ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
 ImgurClient.prototype.unfollowTag = Account.UnfollowTag;
 

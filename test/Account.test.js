@@ -53,4 +53,8 @@ describe("Account", function () {
 		const result = await authClient.unfollowTag("fun");
 		expect(result.status).to.be.equal(true);
 	});
+	it("getAccountCommentCount", async function () {
+		const result = await authClient.getAccountCommentCount("WAFWAF123");
+		expect(typeof result).to.be.equal("number");
+	});
 });
