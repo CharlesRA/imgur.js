@@ -34,6 +34,7 @@ const client = new ImgurClient({clientId: "myClientId"});
 | [getAccountSettings()](#getAccountSettings)               | Account  |
 | [getAccountsBlocked()](#getAccountsBlocked)               | Account  |
 | [isAccountBlocked()](#isAccountBlocked)                   | Account  |
+| [unfollowTag()](#unfollowTag)                             | Account  |
 | [changeStatusFavoriteImage()](#changeStatusFavoriteImage) | Image    |
 | [getImageInformations()](#getImageInformations)           | Image    |
 | [upload()](#upload)                                       | Image    |
@@ -52,10 +53,6 @@ const client = new ImgurClient({clientId: "myClientId"});
 ### changeAlbumFavoriteStatus
 
 ```js
-client.followTag("doggo").then(console.log);
-```
-
-```js
 client.changeAlbumFavoriteStatus("naOyG").then(console.log);
 ```
 
@@ -72,6 +69,12 @@ client.getAlbumImages("U2IKcAG").then(console.log);
 ```
 
 ## Account
+
+### followTag
+
+```js
+client.followTag("doggo").then(console.log);
+```
 
 ### isAccountBlocked
 
@@ -119,6 +122,12 @@ client.getAccountsBlocked().then(console.log);
 
 ```js
 client.getAccountSettings().then(console.log);
+```
+
+### unfollowTag
+
+```js
+client.unfollowTag("doggo").then(console.log);
 ```
 
 ## Comment

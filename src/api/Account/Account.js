@@ -8,6 +8,7 @@ const AccountImages = require("./AccountImages");
 const AccountReplies = require("./AccountReplies");
 const AccountSettings = require("./AccountSettings");
 const FollowTag = require("./FollowTag");
+const UnfollowTag = require("./UnfollowTag");
 
 module.exports = {
 	AccountAvatar,
@@ -20,4 +21,5 @@ module.exports = {
 	AccountReplies,
 	AccountSettings,
 	FollowTag,
+	UnfollowTag,
 };

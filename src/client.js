@@ -21,6 +21,7 @@ ImgurClient.prototype.getAccountReplies = Account.AccountReplies;
 ImgurClient.prototype.getAccountSettings = Account.AccountSettings;
 ImgurClient.prototype.getAccountsBlocked = Account.AccountBlocks;
 ImgurClient.prototype.isAccountBlocked = Account.AccountBlockStatus;
+ImgurClient.prototype.unfollowTag = Account.UnfollowTag;
 
 // Album functions
 ImgurClient.prototype.getAlbumInformations = Album.AlbumBase;

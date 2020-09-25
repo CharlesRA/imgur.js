@@ -49,4 +49,8 @@ describe("Account", function () {
 		const result = await authClient.followTag("fun");
 		expect(result.status).to.be.equal(true);
 	});
+	it("unfollowTag", async function () {
+		const result = await authClient.unfollowTag("fun");
+		expect(result.status).to.be.equal(true);
+	});
 });
