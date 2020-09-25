@@ -15,7 +15,10 @@ npm install imgur-api.js
 
 ```javascript
 const ImgurClient = require("imgur-api.js");
-const client = new ImgurClient({clientId: "myClientId"});
+const client = new ImgurClient({
+	clientId: "myClientId",
+	accessToken: "userAccessToken",
+});
 ```
 
 ## API
