@@ -22,4 +22,9 @@ describe("Gallery", function () {
 		const result = await unauthClient.getTagInfo("fun");
 		expect(result.name).to.be.equal("fun");
 	});
+	it("getImagesVotes", async function () {
+		const result = await unauthClient.getImagesVotes("GYRs587");
+		expect(typeof result.ups).to.be.equal("number");
+		expect(typeof result.downs).to.be.equal("number");
+	});
 });

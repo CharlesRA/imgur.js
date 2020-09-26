@@ -41,6 +41,7 @@ ImgurClient.prototype.deleteComment = Comment.CommentDeletion;
 ImgurClient.prototype.getDefaultTags = Gallery.GalleryTags;
 ImgurClient.prototype.getGalleryImages = Gallery.GalleryImage;
 ImgurClient.prototype.getGalleryTags = Gallery.GalleryItemTags;
+ImgurClient.prototype.getImagesVotes = Gallery.AlbumImageVotes;
 ImgurClient.prototype.getTagInfo = Gallery.GalleryTagInfo;
 
 // Image Function

@@ -52,9 +52,8 @@ const client = new ImgurClient({
 | [getDefaultTags()](#getDefaultTags)                       | Gallery  |
 | [getGalleryImages()](#getGalleryImages)                   | Gallery  |
 | [getGalleryTags()](#getGalleryTags)                       | Gallery  |
+| [getImagesVotes()](#getImagesVotes)                       | Gallery  |
 | [getTagInfo()](#getTagInfo)                               | Gallery  |
-
----
 
 ## Album
 
@@ -194,6 +193,12 @@ client.getGalleryImages("h4uIJt8").then(console.log);
 
 ```js
 client.getGalleryTags("h4uIJt8").then(console.log);
+```
+
+### getImagesVotes
+
+```js
+client.getImagesVotes("GYRs587").then(console.log);
 ```
 
 ### getTagInfo
