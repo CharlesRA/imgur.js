@@ -3,6 +3,10 @@ const ImgurClient = require("../index");
 const expect = require("chai").expect;
 
 const unauthClient = new ImgurClient({clientId: process.env.CLIENT_ID});
+const authClient = new ImgurClient({
+	clientId: process.env.CLIENT_ID,
+	accessToken: process.env.ACCESS_TOKEN,
+});
 
 describe("Gallery", function () {
 	this.timeout(10000);
@@ -26,5 +30,21 @@ describe("Gallery", function () {
 		const result = await unauthClient.getImagesVotes("GYRs587");
 		expect(typeof result.ups).to.be.equal("number");
 		expect(typeof result.downs).to.be.equal("number");
+	});
+	it("voteImage : up", async function () {
+		const result = await authClient.voteImage("GYRs587", "up");
+		expect(result).to.be.equal(true);
+	});
+	it("voteImage : down", async function () {
+		const result = await authClient.voteImage("GYRs587", "down");
+		expect(result).to.be.equal(true);
+	});
+	it("voteImage : veto", async function () {
+		const result = await authClient.voteImage("GYRs587", "veto");
+		expect(result).to.be.equal(true);
+	});
+	it("voteImage : bad string", async function () {
+		const result = await authClient.voteImage("GYRs587", "bad string");
+		expect(result).to.be.equal(undefined);
 	});
 });

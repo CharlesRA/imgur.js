@@ -43,6 +43,7 @@ ImgurClient.prototype.getGalleryImages = Gallery.GalleryImage;
 ImgurClient.prototype.getGalleryTags = Gallery.GalleryItemTags;
 ImgurClient.prototype.getImagesVotes = Gallery.AlbumImageVotes;
 ImgurClient.prototype.getTagInfo = Gallery.GalleryTagInfo;
+ImgurClient.prototype.voteImage = Gallery.AlbumImageVoting;
 
 // Image Function
 ImgurClient.prototype.getImageInformations = Image.ImageBase;

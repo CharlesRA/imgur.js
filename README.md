@@ -54,6 +54,7 @@ const client = new ImgurClient({
 | [getGalleryTags()](#getGalleryTags)                       | Gallery  |
 | [getImagesVotes()](#getImagesVotes)                       | Gallery  |
 | [getTagInfo()](#getTagInfo)                               | Gallery  |
+| [voteImage()](#voteImage)                                 | Gallery  |
 
 ## Album
 
@@ -205,6 +206,12 @@ client.getImagesVotes("GYRs587").then(console.log);
 
 ```js
 client.getTagInfo("fun").then(console.log);
+```
+
+### voteImage
+
+```js
+client.voteImage("GYRs587", "up").then(console.log);
 ```
 
 ## Image
