@@ -4,6 +4,7 @@ const Comment = require("./api/Comment/Comment");
 const Gallery = require("./api/Gallery/Gallery");
 const Image = require("./api/Image/Image");
 
+/** This is a description of the foo function. */
 class ImgurClient {
 	constructor(loginParams) {
 		this.clientId = loginParams.clientId;
@@ -11,6 +12,7 @@ class ImgurClient {
 		this.isLogged = loginParams.accessToken != undefined;
 	}
 }
+
 // Account functions
 // ImgurClient.prototype.blockAccount = Account.AccountBlockCreate;
 ImgurClient.prototype.followTag = Account.FollowTag;
@@ -38,6 +40,11 @@ ImgurClient.prototype.sendComment = Comment.CommentCreation;
 ImgurClient.prototype.deleteComment = Comment.CommentDeletion;
 
 // Gallery functions
+/**
+ * Gets a list of default tags.
+ * @example
+client.getDefaultTags().then(console.log);
+ */
 ImgurClient.prototype.getDefaultTags = Gallery.GalleryTags;
 ImgurClient.prototype.getGalleryImages = Gallery.GalleryImage;
 ImgurClient.prototype.getGalleryTags = Gallery.GalleryItemTags;

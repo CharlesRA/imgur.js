@@ -3,3 +3,4 @@ test
 .prettierignore
 test.js
 **/.nyc_output
+documentation/
